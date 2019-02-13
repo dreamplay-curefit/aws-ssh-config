@@ -1,16 +1,16 @@
 aws-ssh-config
 ======
-- replace yogesh.kumar and configTest and see magic
+- If Setup is done, just run this. Replace `yogesh.kumar` (2 places) and `magical-config-file` 
 ```
-python ~/aws-ssh-config/aws-ssh-config.py --no-identities-only --strict-hostkey-checking --tags Name --user yogesh.kumar --ssh-key-name id_rsa --proxy yogesh.kumar@carefit-jump-box-new  > ~/.ssh/configTest
+python ~/aws-ssh-config/aws-ssh-config.py --no-identities-only --strict-hostkey-checking --tags Name --user yogesh.kumar --ssh-key-name id_rsa --proxy yogesh.kumar@carefit-jump-box-new  > ~/.ssh/magical-config-file
 ```
 
 
-Curefit Setup (just do these)
+Curefit Setup (Start with this)
 ---
 
 ```
-git clone git@github.com:dreamplay-curefit/aws-ssh-config.git
+git clone git@github.com:dreamplay-curefit/aws-ssh-config.git ~/
 ```
 - install pip
 ```
@@ -18,7 +18,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py
 ```
 - install deps
 ```
-pip install -r requirements.txt
+pip install -r ~/aws-ssh-config/requirements.txt
 ```
 
 Description
