@@ -177,7 +177,7 @@ def main():
                 keydir = '~/.ssh/'
 
             if args.ssh_key_name:
-                print('    IdentityFile ' + keydir + args.ssh_key_name + '.pem')
+                print('    IdentityFile ' + keydir + args.ssh_key_name)
             else:
                 key_name = AMI_IDS_TO_KEY.get(instance.image_id, instance.key_name)
 
@@ -188,7 +188,7 @@ def main():
                 print('    IdentitiesOnly yes')
             if not args.strict_hostkey_checking:
                 print('    StrictHostKeyChecking no')
-            if args.proxy:
+            if args.proxy and ip_addr.startswith("192.168"):
                 print('    ProxyCommand ssh ' + args.proxy + ' -W %h:%p')
             print('')
 
