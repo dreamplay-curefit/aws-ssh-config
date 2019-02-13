@@ -1,5 +1,25 @@
 aws-ssh-config
 ======
+- replace yogesh.kumar and configTest and see magic
+```
+python ~/aws-ssh-config/aws-ssh-config.py --no-identities-only --strict-hostkey-checking --tags Name --user yogesh.kumar --ssh-key-name id_rsa --proxy yogesh.kumar@carefit-jump-box-new  > ~/.ssh/configTest
+```
+
+
+Curefit Setup (just do these)
+---
+
+```
+git clone git@github.com:dreamplay-curefit/aws-ssh-config.git
+```
+- install pip
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py
+```
+- install deps
+```
+pip install -r requirements.txt
+```
 
 Description
 ---
