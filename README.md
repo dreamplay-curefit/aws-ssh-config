@@ -10,7 +10,7 @@ Carefit Setup (Start with this)
 ---
 
 ```
-git clone git@github.com:dreamplay-curefit/aws-ssh-config.git ~/
+git clone the project
 ```
 - install pip
 ```
