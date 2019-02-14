@@ -6,7 +6,7 @@ python ~/aws-ssh-config/aws-ssh-config.py --no-identities-only --strict-hostkey-
 ```
 
 
-Curefit Setup (Start with this)
+Carefit Setup (Start with this)
 ---
 
 ```
