@@ -1,6 +1,6 @@
 aws-ssh-config
 ======
-- If Setup is done, just run this. Replace `yogesh.kumar`
+- If Setup is done, just run this and ssh config will be in sync. Replace `yogesh.kumar` (create alias)
 ```
 python aws-ssh-config/aws-ssh-config.py --no-identities-only --strict-hostkey-checking --tags Name --user yogesh.kumar --ssh-key-name id_rsa --proxy yogesh.kumar@carefit-jump-box-new  > ~/.ssh/config
 ```
